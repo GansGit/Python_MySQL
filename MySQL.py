@@ -12,7 +12,6 @@ cur.execute ("Select * from books")
 rows = cur.fetchall()
 for row in rows:
     print row
-cur.conn.cursor(myDB.cursors.DictCursor)
-rows = cur.fetchall()
-for row in rows:
-    print row["BookID"], row["Title"]
+for i in range(cur.rowcount):
+        row = cur.fetchone()
+        print row[0], row[1]
