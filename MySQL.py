@@ -9,6 +9,6 @@ result = cur.fetchone()
 print "DataBase version : %s" %result
 ########################
 cur.execute ("Select * from books")
-rows - cur.fetchall()
+rows = cur.fetchall()
 for row in rows:
     print row
