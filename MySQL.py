@@ -12,6 +12,6 @@ def GetAllAuthors():
         print desc
         print "%s %s %s %s" % (desc[0][0], desc[1][0], desc[2][0], desc[3][0])
         for row in rows:
-        print "%d %s %s %s" % row
-
-GetAllAuthors
+            print "%d %s %s %s" % row
+    curs.close()
+GetAllAuthors()
