@@ -3,7 +3,7 @@ from bottle import route, run
 import MySQLdb as db
 
 def GetAllAuthors():
-    connect = db.connect('localhost', 'root', 'pass', 'test')
+    connect = db.connect('10.62.10.155', 'python', 'pass', 'test')
     with connect:
         curs = connect.cursor()
         curs.execute("Select * from authors")
